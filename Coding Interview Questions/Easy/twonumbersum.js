@@ -16,3 +16,20 @@ function twoNumberSum(array, targetSum) {
 	return result;
 }
 
+//Solution 2:  This is the common sollution but with the time complexity is n.
+
+function twoNumberSum(array, targetSum) {
+  // Write your code here.
+	let newObj = {};
+	
+	for(let i = 0; i < array.length; i++){
+		let compNum = targetSum - array[i];
+		let currNum = array[i];
+		if(newObj[compNum]){
+				return [currNum, compNum]
+		}
+		newObj[currNum] = true;
+	}
+	return[];
+}
+
