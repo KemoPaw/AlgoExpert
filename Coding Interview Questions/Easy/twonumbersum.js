@@ -1,4 +1,4 @@
-//Solution 1: This is the most common sollution but the time complexity is n exponenet 2.
+//Solution 1: This is the most common solution but the time complexity is n exponenet 2.
 
 function twoNumberSum(array, targetSum) {
   // Write your code here.
@@ -16,7 +16,7 @@ function twoNumberSum(array, targetSum) {
 	return result;
 }
 
-//Solution 2:  This is the common sollution but with the time complexity is n.
+//Solution 2:  This is the common sllution but with the time complexity is n.
 
 function twoNumberSum(array, targetSum) {
   // Write your code here.
@@ -33,7 +33,7 @@ function twoNumberSum(array, targetSum) {
 	return[];
 }
 
-//Solution 2:  This is the common sollution but with the time complexity is n(log N).
+//Solution 2:  This is the common solution but with the time complexity is n(log N).
 
 function twoNumberSum(array, targetSum) {
   // Write your code here.
