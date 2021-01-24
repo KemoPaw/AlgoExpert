@@ -33,3 +33,31 @@ function twoNumberSum(array, targetSum) {
 	return[];
 }
 
+//Solution 2:  This is the common sollution but with the time complexity is n(log N).
+
+function twoNumberSum(array, targetSum) {
+  // Write your code here.
+	array.sort(function(a, b) {
+		return a - b;
+	}
+	);
+	
+	let leftNum = 0; //grabs smallest number
+	let rightNum = array.length - 1; //grabs largest number
+	while (leftNum < rightNum){
+			let currentSum = array[leftNum] + array[rightNum];
+			
+			if(currentSum === targetSum){
+					return[array[leftNum], array[rightNum]]
+			}
+			else if(currentSum > targetSum){
+					rightNum -= 1;
+			}
+			else if(currentSum < targetSum){
+					leftNum += 1;
+				// console.log(leftNum);
+			}
+	}
+	return [];
+}
+
