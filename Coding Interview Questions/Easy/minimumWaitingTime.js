@@ -1,3 +1,7 @@
+
+
+//Solution 1: This is a solution with the time complexity is (nLogn) time.
+
 function minimumWaitingTime(queries) {
   // Write your code here.
 	queries.sort((a,b) => a -b);

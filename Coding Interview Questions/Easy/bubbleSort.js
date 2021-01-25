@@ -1,3 +1,6 @@
+//Solution 1: This is a solution with the time complexity is n.
+
+
 function bubbleSort(array) {
   // Write your code here.
 	let sorted = false;
