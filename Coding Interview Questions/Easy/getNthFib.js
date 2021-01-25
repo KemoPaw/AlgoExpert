@@ -27,7 +27,6 @@ function getNthFib(n, cache = {1:0, 2: 1 }) {
 
 function getNthFib(n) {
   // Write your code here.
-	
 	let prevNums = [0, 1];
 	let counter = 3;
 	while(counter <= n){
