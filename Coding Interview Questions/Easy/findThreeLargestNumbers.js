@@ -1,4 +1,5 @@
 
+//Solution 1: This is a solution with the time complexity is n.
 
 function findThreeLargestNumbers(array) {
   // Write your code here.
@@ -22,7 +23,9 @@ function findThreeLargestNumbers(array) {
 			}
 		
 		// largeThree.sort((a, b) => a -b);
-		console.log(largeThree);
+		// console.log(largeThree);
 	}
 	return largeThree;
 }
+
+//notes: consider creating some helper functions next time!
