@@ -1,7 +1,7 @@
 // https://www.hackerrank.com/challenges/candies/problem
 
-function candies(n, arr) {
-   let grades = arr;
+function candies(arr) {
+    let grades = arr;
     let candies = new Array(grades.length);
     //initialize to 0
     candies.fill(0); //[0,0,0,0,1,0,0,0,0,1]

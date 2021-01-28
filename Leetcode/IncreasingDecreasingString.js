@@ -41,4 +41,4 @@ function inDeStr(string){
     return result;
 }
 
-inDeStr("aabbcc")
+inDeStr("aabbcc");
