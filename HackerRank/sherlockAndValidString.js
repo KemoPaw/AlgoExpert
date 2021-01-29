@@ -15,13 +15,13 @@ function sherlockCheck(string){
     }
 
     let charCountArr = Object.values(charCount).sort((a , b) => a - b);
-    console.log(charCountArr);
+    // console.log(charCountArr);
 
     if(Array.from(new Set(charCountArr)).length < 2){
         return true;
     } 
 
-    let count = 0;
+    // let count = 0;
     let newObj = {};
 
     for(let k = 0; k < charCountArr.length; k ++){
@@ -34,7 +34,7 @@ function sherlockCheck(string){
         }
     }
 
-    console.log(Object.values(newObj));
+    // console.log(Object.values(newObj));
     let newObjArr = Object.values(newObj).sort((a, b) => a - b);
 
     let switchy = false;
