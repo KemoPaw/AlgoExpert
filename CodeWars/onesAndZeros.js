@@ -7,3 +7,6 @@ const binaryArrayToNumber = arr => {
   return parseInt(stringInt, 2);
 };
 
+// other solution
+
+const binaryArrayToNumber = arr => parseInt(arr.join(''), 2);
