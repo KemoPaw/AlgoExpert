@@ -2,13 +2,13 @@ function leastCountArray(arr){ //[3,5,5,5,2,2,7,7,7,7]
 
 let countObj = {3: 1, 5: 3, 2: 2, 7 : 4};
 
-for (let i = 0; i < arr.length; i ++){
-	if(countObj[arr[i]] === undefined) {
-		countObj[arr[i]] = 1;
-} 
-else {
-	countObj[arr[i]] += 1;
-}
+	for (let i = 0; i < arr.length; i ++){
+		if(countObj[arr[i]] === undefined) {
+			countObj[arr[i]] = 1;
+	} 
+		else {
+			countObj[arr[i]] += 1;
+		}
 }
 
 
