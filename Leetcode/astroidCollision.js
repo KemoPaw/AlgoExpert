@@ -26,3 +26,33 @@
 // If (Math.abs(leftEle) < Math.abs(rightEle))
 // Result[i - 1] = rightEle;
 // else() // remove that leftEle from a possibility of being checked again;
+
+function astroidCrash(arr){
+    let leftResult = [];
+    let result = [];
+    for(let i = 0; i < arr.length; i ++){
+        if(arr[i] < 0){
+            leftResult.push(arr[i])
+        }
+        else{
+            result = arr.slice(i);
+            break;
+        }
+    }
+    let finalResult = (result.length > 0) ?  [result[0]] : [];
+    
+    let button = true;
+    while(button){
+        for(let j = 1; j < result.length; j ++){
+            let leftNum = result[i -1];
+            let rightNum = result[i];
+            if(result[i] < 0 && leftNum < 0){
+
+            }
+        }
+    }
+    return leftResult.concat(result);
+
+}
+
+console.log(astroidCrash([-1, -4, 2, 7, 8, -2, -5, 7, 2, -4]));
