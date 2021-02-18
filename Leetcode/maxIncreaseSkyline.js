@@ -1,41 +1,44 @@
 Function maxSameSkyline(grid) { //2d array
-	Let maxTopBottom = []; //[8, 7, 9, 3];
-	Let maxLeftRight = [];
+	let maxTopBottom = []; //[8, 7, 9, 3];
+	let maxLeftRight = [];
 
 	for(let i = 0; i < grid.length; i++){ //check each column;
-		Let currMaxRow = [];
+		let currMaxRow = [];
 		for(let k = 0; k < grid[0].length; k ++){ //then check col, row
 			currMaxRow.push(grid[i][k]);
-}
-Let pushedMax = Math.max(...currMaxRow);
-maxTopBottom.push(pushedMax);
-}
-for(j = 0; j < grid[0].length; j++){ //check each row
-		Let currMaxCol = [];
+        }
+    let pushedMax = Math.max(...currMaxRow);
+    maxTopBottom.push(pushedMax);
+    }
+
+    for(j = 0; j < grid[0].length; j++){ //check each row
+		let currMaxCol = [];
 		for(let m = 0; m < grid.length; m ++){
 			currMaxCol.push(grid[j][m]);
-}
-Let pushedMax = Math.max(...currMaxCol);
-maxLeftRightpush(pushedMax);
-}
-//everything is filled ;A;
-Let copyGrid = grid;
+        }
+    let pushedMax = Math.max(...currMaxCol);
+    maxLeftRightpush(pushedMax);
+    }
 
-For (let q = 0; q < copyGrid.length; q++){
-	for(let w = 0; w < copyGrid[0].length; w ++){
-		Let maxedValue = Math.min(maxTopBottom[q], maxLeftRight[w]);
-		copyGrid[q][w] = maxedValue;
-}
-}
 
-Let gridSum = 0;
-let gridCpySum = 0;
+    //everything is filled ;A;
+    let copyGrid = grid;
 
-For (let e = 0; e < copyGrid.length; e++){
-	for(let r = 0; r < copyGrid[0].length; r ++){
-		gridSum += grid[e][r];
-gridCpySum += grid[e][r];
-}
-}
-Return ( gridCpySum - gridSum);
+    for (let q = 0; q < copyGrid.length; q++){
+        for(let w = 0; w < copyGrid[0].length; w ++){
+            let maxedValue = Math.min(maxTopBottom[q], maxLeftRight[w]);
+            copyGrid[q][w] = maxedValue;
+        }
+    }
+
+    let gridSum = 0;
+    let gridCpySum = 0;
+
+    for (let e = 0; e < copyGrid.length; e++){
+        for(let r = 0; r < copyGrid[0].length; r ++){
+            gridSum += grid[e][r];
+            gridCpySum += grid[e][r];
+        }
+    }
+    return ( gridCpySum - gridSum);
 }
