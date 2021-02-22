@@ -19,5 +19,4 @@ function meeting(s) {
   
   return allNamesUpper.sort().join("");
   
-  
 }
