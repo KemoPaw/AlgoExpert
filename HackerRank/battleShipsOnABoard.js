@@ -67,16 +67,6 @@ function findNumShips(grid){
 	return counter;
 }
 
-
-
-
-
-
-
-
-
-
-
 // var countBattleships = function(board) {
 //     let count = 0;
 //     for (let i = 0; i < board.length; i++) {
