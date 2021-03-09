@@ -17,7 +17,7 @@ function changeCase(string){
     if(string[i] === string[i].toUpperCase()){
       newStr += string[i].toLowerCase();
     }
-    else{
+    else{ 
       newStr += string[i].toUpperCase()
     }
   }
