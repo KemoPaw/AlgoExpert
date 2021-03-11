@@ -10,7 +10,7 @@ function longestSubStr(str){ // "aabbghi"
 		if(currObj[str[i]] === undefined){
 			currObj[str[i]] = i;
         } //put items in currObj;
-        
+
         else { //we found duplicate
             currLongest = Math.max(currLongest, Object.values(currObj).length)
             // currLongest = (1, 1)// (1, 2)
@@ -19,10 +19,10 @@ function longestSubStr(str){ // "aabbghi"
             currObj = {};
         }
 
-}
-
-	
+    }
 
 	return Math.max(currLongest, Object.values(currObj).length);
 
 }
+
+//done in constant time complexity
