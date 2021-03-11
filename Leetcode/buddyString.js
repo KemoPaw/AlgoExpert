@@ -18,9 +18,13 @@ var buddyStrings = function(a, b) {
             currCount[a[i]] += 1;
         }
         
-        if(Object.values(currCount).sort((a,b) => b - a)[0] > 1) return true;
+        // if(Object.values(currCount).sort((a,b) => b - a)[0] > 1) return true;
+
+        var currCountValues = Object.values(currCount)
         
-        // console.log(Object.values(currCount).sort((a,b) => b - a))
+        for(let j = 0; j < currCountValues.length; j ++){
+            if(currCountValues[j] > 1) return true;
+        }
         return false;
         
     }
