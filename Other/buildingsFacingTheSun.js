@@ -6,7 +6,7 @@ function canSeeSun(buildingHeights, dir){
 	let currHighestBuilding = 0; //5
 	let resultIndices = []; // [7, 6, 3, 1]
 
-	if(dir === “EAST”){ //right to left;
+	if(dir === "EAST"){ //right to left;
 
 		currHighestBuilding = buildingHeights[buildingHeights.length - 1];
 		resultIndices.push(buildingHeights.length - 1);
@@ -20,7 +20,7 @@ function canSeeSun(buildingHeights, dir){
 		}
 	}
 
-	if(dir === “WEST”){ //left to right;
+	if(dir === "WEST"){ //left to right;
 		currHighestBuilding = buildingHeights[0];
 		resultIndices.push(0);
 		for (let i = 1; i < buildingHeights.length; i ++){
