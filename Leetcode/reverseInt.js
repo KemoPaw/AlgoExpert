@@ -1,5 +1,5 @@
 
-var reverse = function(x) {
+let reverse = function(x) {
     //check if number is negative
     //remove zeros if there are any at the end
     //reverse the number, then add a negative sign if needed
@@ -7,6 +7,8 @@ var reverse = function(x) {
     
     let numberNeg = false;
     let currBer = x.toString();
+    
+    if(x === 0) return 0;
     
     if(currBer[0] === "-") {
         numberNeg = true;
@@ -39,8 +41,8 @@ var reverse = function(x) {
     
     
     
-   if (parseInt(newBer, 10) > 2147483647 || parseInt(newBer, 10) < -2147483647) return 0;
+   if (parseInt(newBer) > 2147483647 || parseInt(newBer) < -2147483647) return 0;
     
-    return parseInt(newBer, 10);
+    return parseInt(newBer);
     
 };
