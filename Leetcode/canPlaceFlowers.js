@@ -7,8 +7,6 @@ var canPlaceFlowers = function(flowerbed, n) {
     //return true if n <= 0;
     //else return false;
     
-    // for(let i = 1; i < flowerbed.length - 2; i ++){
-        //test for edge cases
     for(let i = 0; i < flowerbed.length; i ++){
     
         let tempLeft = (flowerbed[i -1] === undefined) ? 0 : flowerbed[i -1];
