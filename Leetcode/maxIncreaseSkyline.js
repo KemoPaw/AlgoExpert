@@ -1,4 +1,4 @@
-Function maxSameSkyline(grid) { //2d array
+function maxSameSkyline(grid) { //2d array
 	let maxTopBottom = []; //[8, 7, 9, 3];
 	let maxLeftRight = [];
 
@@ -40,5 +40,5 @@ Function maxSameSkyline(grid) { //2d array
             gridCpySum += grid[e][r];
         }
     }
-    return ( gridCpySum - gridSum);
+    return (gridCpySum - gridSum);
 }
