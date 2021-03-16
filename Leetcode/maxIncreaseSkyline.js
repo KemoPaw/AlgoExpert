@@ -20,7 +20,6 @@ function maxSameSkyline(grid) { //2d array
     maxLeftRightpush(pushedMax);
     }
 
-
     //everything is filled ;A;
     let copyGrid = grid;
 
