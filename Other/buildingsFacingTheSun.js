@@ -32,7 +32,6 @@ function canSeeSun(buildingHeights, dir){
 		}
 	}
 
-return resultIndices.sort((a, b)=> a - b);
-
+	return resultIndices.sort((a, b)=> a - b);
 }
 
