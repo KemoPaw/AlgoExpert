@@ -9,7 +9,7 @@ var buddyStrings = function(a, b) {
     
     if(a === b){
         
-        var currCount = {};
+        let currCount = {};
         
         for(let i = 0; i < a.length; i++){
             if(currCount[a[i]] === undefined){
@@ -20,7 +20,7 @@ var buddyStrings = function(a, b) {
         
         // if(Object.values(currCount).sort((a,b) => b - a)[0] > 1) return true;
 
-        var currCountValues = Object.values(currCount);
+        let currCountValues = Object.values(currCount);
         
         for(let j = 0; j < currCountValues.length; j ++){
             if(currCountValues[j] > 1) return true;
@@ -30,8 +30,8 @@ var buddyStrings = function(a, b) {
     }
     
     
-    var firstOccur = -1;
-    var secOccur = -1;
+    let firstOccur = -1;
+    let secOccur = -1;
     
     
     for(let i = 0; i < a.length; i ++){
