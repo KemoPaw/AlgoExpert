@@ -8,7 +8,6 @@ function queueTime(customers, n) { // n is # of checkout tils
       return 0;
   }
 
-
   let objQueue = {};
 //   let totalTime = 0;
   
