@@ -26,9 +26,9 @@ function findNumShips(grid){
 				markVisitedShips([m, q], visited);
 				Counter += 1;
 				
+			}
+		}
 	}
-
-	}}
 
 
 	function markVisitedShips(startPos, visited){ //startPos is an array [x, y]
