@@ -30,7 +30,6 @@ function findNumShips(grid){
 		}
 	}
 
-
 	function markVisitedShips(startPos, visited){ //startPos is an array [x, y]
 		let dirs = [[0, 1],[1, 0],[0, -1],[-1, 0]];
 		
@@ -41,7 +40,7 @@ function findNumShips(grid){
 			let newDirs = findDirs(queue[0], dirs, visited); //array of neighbors
 			queue.shift();
 			queue = queue.concat(newDirs);
-	}
+		}
 	}
 
 	function findDirs(start, dirs, visited){
