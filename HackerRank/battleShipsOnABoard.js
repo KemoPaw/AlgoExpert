@@ -62,7 +62,6 @@ function findNumShips(grid){
 		return result; //nested array;
 	}
 
-
 	return counter;
 }
 
