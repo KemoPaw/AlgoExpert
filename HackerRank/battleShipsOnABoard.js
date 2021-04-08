@@ -57,7 +57,6 @@ function findNumShips(grid){
 				result.push([currRow, currCol]);
 			}
 
-
 		}
 		return result; //nested array;
 	}
