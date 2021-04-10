@@ -13,11 +13,11 @@ function getNthFib(n) {
 function getNthFib(n, cache = {1:0, 2: 1 }) {
   // Write your code here.
 	if (n in cache){
-			return cache[n];
+		return cache[n];
 	}
 	else {
-			cache[n] = getNthFib(n -1, cache) + getNthFib(n -2, cache); //called recursion 
-			return cache[n];
+		cache[n] = getNthFib(n -1, cache) + getNthFib(n -2, cache); //called recursion 
+		return cache[n];
 	}
 }
 
