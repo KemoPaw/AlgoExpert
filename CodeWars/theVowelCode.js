@@ -3,10 +3,10 @@ function encode(string) {
   let encodedString = "";
   
   for(let i = 0; i < string.length; i ++){
-    if(vowelObj[string[i]] !== undefined){ //letter is in the word
+    if (vowelObj[string[i]] !== undefined){ //letter is in the word
         encodedString += vowelObj[string[i]];
     }
-    else{
+    else {
        encodedString += string[i];
     }
   }
@@ -15,14 +15,14 @@ function encode(string) {
 }
 
 function decode(string) {
-    let vowelObj = {1: "a", 2: "e", 3: "i", 4: "o", 5: "u"};
+  let vowelObj = {1: "a", 2: "e", 3: "i", 4: "o", 5: "u"};
   let decodedString = "";
   
   for(let i = 0; i < string.length; i ++){
-    if(vowelObj[string[i]] !== undefined){ //letter is in the word
+    if (vowelObj[string[i]] !== undefined){ //letter is in the word
         decodedString += vowelObj[string[i]];
     }
-    else{
+    else {
        decodedString += string[i];
     }
   }
